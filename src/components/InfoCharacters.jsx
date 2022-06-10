@@ -17,14 +17,19 @@ const InfoCharacters = ({resident}) => {
 
   return (
     <article className='characters'>
+      <div className='container-img'>
         <img src={character?.image} alt="" />
+        <div>
+          <span className='status'><b>Status:</b> {character?.status}</span>
+        </div>
+      </div>
         <h3>{character?.name}</h3>
         <div className='description'>
             <ul>
-                <li>Species: {character?.species}</li>
-                <li>Status: {character?.status}</li>
-                <li>Origin: {character?.origin.name}</li>
-                <li>Appearances: {character?.episode?.length}</li>
+                <li><b>Species:</b> {character?.species}</li>
+                
+                <li><b>Origin:</b> {character?.origin.name}</li>
+                <li><b>Appearances:</b> {character?.episode?.length}</li>
             </ul>
         </div>
     </article>
