@@ -2,10 +2,14 @@ import "./App.css";
 import useApi from "./hooks/useApi";
 import InfoLocation from "./components/InfoLocation";
 import InfoCharacters from "./components/InfoCharacters";
+import InputSearch from "./components/InputSearch";
+import { useState } from "react";
 
 function App() {
-  const location = useApi();
-  console.log(location);
+
+  const [searchLocation, setSearchLocation] = useState()
+  const location = useApi(searchLocation);
+  
 
   return (
     <div className="container-global">
@@ -17,10 +21,9 @@ function App() {
       </div>
       
       
-        <form action="">
-          <input type="text" />
-          <button>Submit</button>
-        </form>
+       <InputSearch 
+       setSearchLocation={setSearchLocation}
+       />
       <div className="App">
         <div className="container-character">
           {location?.residents?.map((resident) => (

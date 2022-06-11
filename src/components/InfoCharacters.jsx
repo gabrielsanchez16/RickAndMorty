@@ -17,7 +17,7 @@ const InfoCharacters = ({ resident }) => {
     Dead: "red",
     unknown: "purple",
   };
-  console.log(character);
+
 
   return (
     <article className="characters">
