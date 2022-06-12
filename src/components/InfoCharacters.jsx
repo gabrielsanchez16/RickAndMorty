@@ -1,6 +1,9 @@
 import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
+import {GiAlienBug, GiPerson, GiSpaceSuit , GiSittingDog} from 'react-icons/gi'
+import {SiGooglemaps} from 'react-icons/si'
+import {TbCheckupList} from 'react-icons/tb'
 
 const InfoCharacters = ({ resident }) => {
   const [character, setCharacter] = useState();
@@ -17,6 +20,13 @@ const InfoCharacters = ({ resident }) => {
     Dead: "red",
     unknown: "purple",
   };
+
+  const changeSpecie = {
+    Alien: <GiAlienBug/>,
+    Human: <GiPerson/>,
+    Humanoid: <GiSpaceSuit/>,
+    Animal: <GiSittingDog/>,
+  }
 
 
   return (
@@ -37,14 +47,14 @@ const InfoCharacters = ({ resident }) => {
       <div className="description">
         <ul>
           <li>
-            <b>Species:</b> {character?.species}
+            <b>{changeSpecie[character?.species]}Species:</b> {character?.species}
           </li>
 
           <li>
-            <b>Origin:</b> {character?.origin.name}
+            <b><SiGooglemaps/>Origin:</b> {character?.origin.name}
           </li>
           <li>
-            <b>Appearances:</b> {character?.episode?.length}
+            <b><TbCheckupList/>Appearances:</b> {character?.episode?.length}
           </li>
         </ul>
       </div>

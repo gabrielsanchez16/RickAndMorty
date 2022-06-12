@@ -6,16 +6,17 @@
 }
 
 body {
-    background-color:black;
-    font-family: 'Inconsolata', monospace;
+    background-color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 header {
     background-image: url(./img/2348073.jpg);
-    height: 50vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 
 
 
@@ -24,10 +25,12 @@ header {
 .container-global {
     text-align: center;
 }
+
 .container-alert {
     text-align: center;
     margin-bottom: 10px;
 }
+
 .alert {
     color: #ff9b00;
     border-radius: 10px;
@@ -35,18 +38,19 @@ header {
     padding: 8px;
     text-align: start;
     flex-basis: min-content;
-    display:inline-block;
+    display: inline-block;
 
 }
 
 form {
     margin-top: 178px;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 
 }
 
 form input {
     height: 40px;
+    text-align: center;
     font-size: 16px;
     padding: 10px;
     width: 60%;
@@ -58,6 +62,12 @@ form input {
     -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
     -moz-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
     box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
 }
 
 form button {
@@ -177,24 +187,25 @@ form button {
     margin-right: 5px;
 }
 
-@media (min-width:380px) {
-    header {
-        background-image: url(./img/familia-rick-y-morty.jpg);
-        height: 50vh;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
 
-    }
-}
 
 @media (min-width:480px) {
     .container-global {
         text-align: center;
     }
+    
+    header {
+        background-image: url(./img/familia-rick-y-morty.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
 
     form {
-        margin-top: 159px;
+        margin-top: 140px;
         margin-bottom: 5%;
 
     }
@@ -236,7 +247,7 @@ form button {
         text-align: center;
         display: inline-block;
         color: #ff9b00;
-        background-color: rgb(27, 25, 25, .97);
+        background-color: rgb(27, 25, 25, .98);
         width: 80%;
         border-radius: 20px;
         padding: 1rem;
@@ -273,7 +284,7 @@ form button {
         -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
         -moz-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
         box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
-        
+
 
     }
 
@@ -313,8 +324,18 @@ form button {
         text-align: center;
     }
 
+    header {
+        background-image: url(./img/rick-y-morty-en-universo-de-dragon-ball_3840x2160_xtrafondos.com.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+
     form {
-        margin-top: 120px;
+        margin-top: 148px;
         margin-bottom: 5%;
 
     }
@@ -349,18 +370,18 @@ form button {
     .container-location {
         position: absolute;
         width: 100%;
-        top: 85%
+        top: 90%
     }
 
     .location {
         text-align: center;
         display: inline-block;
         color: #ff9b00;
-        background-color: rgb(27, 25, 25, .9);
+        background-color: rgb(27, 25, 25, .98);
         width: 80%;
         border-radius: 20px;
         padding: 1rem;
-        font-size: 20px;
+        font-size: 18px;
 
     }
 
@@ -377,7 +398,7 @@ form button {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        
+
     }
 
     .container-img {
@@ -432,8 +453,8 @@ form button {
 @media(min-width:1024px) {
     header {
         background-image: url(./img/planetaestraño.png);
-        height: 50vh;
-        width: 90%;
+        height: 100vh;
+        width: 100%;
         border-radius: 20px;
         background-repeat: no-repeat;
         background-position: center center;
@@ -457,7 +478,7 @@ form button {
         padding: 10px;
         width: 60%;
         font-weight: 600;
-       
+
     }
 
     form button {
@@ -483,14 +504,14 @@ form button {
     .container-location {
         position: absolute;
         width: 100%;
-        top: 75%
+        top: 85%
     }
 
     .location {
         text-align: center;
         display: inline-block;
         color: #ff9b00;
-        background-color: rgb(27, 25, 25, .9);
+        background-color: rgb(27, 25, 25, .98);
         width: 80%;
         border-radius: 20px;
         padding: 3rem;
@@ -571,7 +592,7 @@ form button {
     }
 
     form {
-        margin-top: 120px;
+        margin-top: 140px;
         margin-bottom: 5%;
 
     }
@@ -607,7 +628,7 @@ form button {
     .container-location {
         position: absolute;
         width: 100%;
-        top: 70%
+        top: 85%
     }
 
     .location {
@@ -617,9 +638,9 @@ form button {
         background-color: rgb(27, 25, 25, .98);
         width: 80%;
         border-radius: 20px;
-        padding: 4rem;
+        padding: 2rem;
         font-weight: 600;
-        font-size: 25px;
+        font-size: 23px;
 
     }
 
@@ -686,6 +707,6 @@ form button {
         position: absolute;
         top: 3%;
         left: -2%;
-        
+
     }
 }
