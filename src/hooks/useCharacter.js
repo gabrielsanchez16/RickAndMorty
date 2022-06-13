@@ -1,11 +1,17 @@
-import React from 'react'
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-const useCharacter = () => {
+const useCharacter = (resident) => {
+  const [character, setCharacter] = useState();
 
+  useEffect(() => {
+    axios
+      .get(resident)
+      .then((res) => setCharacter(res.data))
+      .catch((error) => console.log(error));
+  }, []);
 
-    
-  return 
-    
-}
+  return character;
+};
 
-export default useCharacter
+export default useCharacter;

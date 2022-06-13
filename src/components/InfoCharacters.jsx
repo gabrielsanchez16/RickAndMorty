@@ -1,19 +1,19 @@
 import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
-import {GiAlienBug, GiPerson, GiSpaceSuit , GiSittingDog} from 'react-icons/gi'
-import {SiGooglemaps} from 'react-icons/si'
-import {TbCheckupList} from 'react-icons/tb'
+import {
+  GiAlienBug,
+  GiPerson,
+  GiSpaceSuit,
+  GiSittingDog,
+  GiMinotaur,
+} from "react-icons/gi";
+import { SiGooglemaps } from "react-icons/si";
+import { TbCheckupList } from "react-icons/tb";
+import useCharacter from "../hooks/useCharacter";
 
 const InfoCharacters = ({ resident }) => {
-  const [character, setCharacter] = useState();
-
-  useEffect(() => {
-    axios
-      .get(resident)
-      .then((res) => setCharacter(res.data))
-      .catch((error) => console.log(error));
-  }, []);
+  const character = useCharacter(resident);
 
   const circlechange = {
     Alive: "green",
@@ -22,12 +22,12 @@ const InfoCharacters = ({ resident }) => {
   };
 
   const changeSpecie = {
-    Alien: <GiAlienBug/>,
-    Human: <GiPerson/>,
-    Humanoid: <GiSpaceSuit/>,
-    Animal: <GiSittingDog/>,
-  }
-
+    Alien: <GiAlienBug />,
+    Human: <GiPerson />,
+    Humanoid: <GiSpaceSuit />,
+    Animal: <GiSittingDog />,
+    MythologicalCreature: <GiMinotaur />,
+  };
 
   return (
     <article className="characters">
@@ -47,14 +47,23 @@ const InfoCharacters = ({ resident }) => {
       <div className="description">
         <ul>
           <li>
-            <b>{changeSpecie[character?.species]}Species:</b> {character?.species}
+            <b>{changeSpecie[character?.species]}Species:</b>{" "}
+            {character?.species}
           </li>
 
           <li>
-            <b><SiGooglemaps/>Origin:</b> {character?.origin.name}
+            <b>
+              <SiGooglemaps />
+              Origin:
+            </b>{" "}
+            {character?.origin.name}
           </li>
           <li>
-            <b><TbCheckupList/>Appearances:</b> {character?.episode?.length}
+            <b>
+              <TbCheckupList />
+              Appearances:
+            </b>{" "}
+            {character?.episode?.length}
           </li>
         </ul>
       </div>
