@@ -6,7 +6,10 @@
 }
 
 body {
-    background-color: black;
+    background-image: url(./img/81mz.gif);
+   color: #a4ef14;
+    
+   
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
@@ -34,7 +37,7 @@ header {
 }
 
 .alert {
-    color: #ff9b00;
+    
     border-radius: 10px;
     background-color: rgb(27, 25, 25);
     padding: 8px;
@@ -56,11 +59,12 @@ form input {
     font-size: 16px;
     padding: 10px;
     width: 60%;
+    color: #a4ef14;
     font-weight: 600;
     background-color: rgb(27, 25, 25);
     border: none;
     border-radius: 10px;
-    color: #ff9b00;
+    
     -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
     -moz-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
     box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
@@ -76,7 +80,7 @@ form button {
     padding: 13px;
     border-radius: 20px;
     background-color: rgb(27, 25, 25);
-    color: #ff9b00;
+    color: #a4ef14;
     border: none;
     -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
     -moz-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
@@ -107,7 +111,7 @@ form button {
 .location {
     text-align: center;
     display: inline-block;
-    color: #ff9b00;
+   
     background-color: rgb(27, 25, 25, .98);
     width: 100%;
     border-radius: 20px;
@@ -139,7 +143,7 @@ form button {
 }
 
 .characters {
-    color: #ff9b00;
+    
     border-radius: 10px;
     background-color: rgb(27, 25, 25);
     padding: 8px;
@@ -172,7 +176,7 @@ form button {
 }
 
 .status {
-    color: #ff9b00;
+    
     background-color: rgb(27, 25, 25);
     border-radius: 5px;
     padding: 2px;
@@ -183,7 +187,7 @@ form button {
 }
 
 .Circle {
-    padding: 5px;
+    padding: 8px;
     border-radius: 50%;
     display: inline-block;
     margin-right: 5px;
@@ -223,8 +227,8 @@ form button {
     form button {
         padding: 10px;
         border-radius: 10px;
-        background-color: rgb(27, 25, 25);
-        color: #ff9b00;
+       
+        
         border: none;
     }
 
@@ -248,8 +252,8 @@ form button {
     .location {
         text-align: center;
         display: inline-block;
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25, .98);
+        
+       
         width: 80%;
         border-radius: 20px;
         padding: 1rem;
@@ -278,9 +282,9 @@ form button {
     }
 
     .characters {
-        color: #ff9b00;
+        
         border-radius: 10px;
-        background-color: rgb(27, 25, 25);
+        
         padding: 8px;
         text-align: center;
         -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
@@ -311,8 +315,8 @@ form button {
     }
 
     .status {
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25);
+        
+        
         border-radius: 5px;
         padding: 2px;
         position: absolute;
@@ -353,8 +357,8 @@ form button {
     form button {
         padding: 10px;
         border-radius: 10px;
-        background-color: rgb(27, 25, 25);
-        color: #ff9b00;
+        
+        
         border: none;
     }
 
@@ -378,8 +382,8 @@ form button {
     .location {
         text-align: center;
         display: inline-block;
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25, .98);
+       
+        
         width: 80%;
         border-radius: 20px;
         padding: 1rem;
@@ -409,9 +413,9 @@ form button {
     }
 
     .characters {
-        color: #ff9b00;
+     
         border-radius: 10px;
-        background-color: rgb(27, 25, 25);
+        
         padding: 8px;
         text-align: center;
         -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
@@ -441,8 +445,8 @@ form button {
     }
 
     .status {
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25);
+        
+        
         border-radius: 5px;
         padding: 2px;
         position: absolute;
@@ -486,8 +490,8 @@ form button {
     form button {
         padding: 10px;
         border-radius: 10px;
-        background-color: rgb(27, 25, 25);
-        color: #ff9b00;
+       
+        
         border: none;
         margin-left: 10px;
     }
@@ -512,8 +516,8 @@ form button {
     .location {
         text-align: center;
         display: inline-block;
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25, .98);
+        
+       
         width: 80%;
         border-radius: 20px;
         padding: 3rem;
@@ -542,9 +546,9 @@ form button {
     }
 
     .characters {
-        color: #ff9b00;
+        
         border-radius: 10px;
-        background-color: rgb(27, 25, 25);
+        
         padding: 8px;
         text-align: center;
         -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
@@ -575,8 +579,8 @@ form button {
     }
 
     .status {
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25);
+        
+        
         border-radius: 6px;
 
         padding: 2px;
@@ -609,8 +613,8 @@ form button {
     form button {
         padding: 18px;
         border-radius: 10px;
-        background-color: rgb(27, 25, 25, .9);
-        color: #ff9b00;
+        
+        
         border: none;
         font-size: 18px;
         font-weight: 600;
@@ -636,8 +640,7 @@ form button {
     .location {
         text-align: center;
         display: inline-block;
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25, .98);
+        
         width: 80%;
         border-radius: 20px;
         padding: 2rem;
@@ -668,9 +671,9 @@ form button {
     }
 
     .characters {
-        color: #ff9b00;
+        
         border-radius: 10px;
-        background-color: rgb(27, 25, 25);
+        
         padding: 8px;
         text-align: center;
         -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
@@ -702,8 +705,7 @@ form button {
     }
 
     .status {
-        color: #ff9b00;
-        background-color: rgb(27, 25, 25);
+        
         border-radius: 5px;
         padding: 2px;
         position: absolute;
