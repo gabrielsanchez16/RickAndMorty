@@ -26,7 +26,7 @@ const InfoCharacters = ({ resident }) => {
     Human: <GiPerson />,
     Humanoid: <GiSpaceSuit />,
     Animal: <GiSittingDog />,
-    MythologicalCreature: <GiMinotaur />,
+    'Mythological Creature': <GiMinotaur />,
   };
 
   return (
