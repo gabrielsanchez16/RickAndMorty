@@ -95,6 +95,50 @@ form button {
     text-align: center;
 }
 
+.pagination-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+    background-color: rgb(27, 25, 25);
+    padding: 10px;
+    border-radius: 15px;
+
+    margin-bottom: 2em;
+  }
+  .pagination-number-container{
+    display: flex;
+    gap:10px;
+    list-style: none;
+    padding-left: 0;
+  }
+  .pagination-prev-next{
+    font-size: 20px;
+    color: #a4ef14;
+    cursor: pointer;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 10, 15);
+    border-radius: 8px;
+  }
+  .page-number {
+    font-size: 20px;
+    color: #a4ef14;
+    cursor: pointer;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  .page-active{
+    background-color: rgb(12, 10, 15);;
+  }
 .App {
     display: flex;
     flex-wrap: wrap;
@@ -135,6 +179,8 @@ form button {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .container-img {
@@ -193,6 +239,32 @@ form button {
     margin-right: 5px;
 }
 
+footer {
+    height: 200px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(27, 25, 25);
+    margin-top: 5em;
+}
+
+footer span {
+    font-size: 5em;
+}
+footer a {
+    color:#a4ef14
+}
+
+footer a:hover {
+    color: purple;
+    transition: 1.5s;
+}
+
+footer h2 {
+    font-size: 2em;
+}
 
 
 @media (min-width:480px) {
